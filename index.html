@@ -9,41 +9,59 @@
 
     <!-- resets browser defaults -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- hayesall template -->
+    <link rel="stylesheet" type="text/css" href="css/hayestemplate.css">
     <!-- custom styles -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!-- hayesall template -->
-     <link rel="stylesheet" type="text/css" href="css/hayestemplate.css">
-
-    <!-- fonts -->
-    
 
 </head>
 <body>
     <header id="masthead">
         <div class="inner-wrap">
-            <a class="site-title" href="https://gavsimps.github.io/#">gavsimps.github.io</a>
+            <a class="site-title" href="https://gavsimps.github.io/#">gavsimps</a>
             <nav class="menu top-menu" role="navigation">
                 <ul class="menu-item">
-                    <!-- <li>
-                        <a href="https://gavsimps.github.io/projects">Projects</a>
-                    </li> -->
+                    <li>
+                        <a href="https://gavsimps.github.io/projects.html">Projects</a>
+                    </li>
                     <!-- <li>
                         <a href="https://gavsimps.github.io/photos">Photography</a>
                     </li> -->
                     <li>
                         <a href="https://gavsimps.github.io/cv.html">CV</a>
                     </li>
+                </ul>
+                <div class="datetime">
+                    <span id="date"></span>
+                    <span id="clock"></span>
+                </div>
             </nav>
         </div>
     </header>
 
     <nav id="js-menu" class="sliding-menu-content" role="navigation">
-        <h5>
-            gavsimps.com
-            <span>Table of Contents</span>
-        </h5>
+        <div class="sliding-nav-top">
+            <h5>
+                gavsimps
+                <span>Directory</span>
+            </h5>
+            <div class="datetime">
+                <span id="date2"></span>
+                <span id="clock2"></span>
+            </div>
+        </div> 
         <ul class="menu-item">
-            
+            <li>
+                <a href="https://gavsimps.github.io/projects.html">
+                    <div class="title">Projects</div>
+                    <p class="short">Collection of Personal Work</p>
+            </li>
+            <li>
+                <a href="https://gavsimps.github.io/cv.html">
+                    <div class="title">CV</div>
+                    <p class="short">Education and Experience</p>
+                </a>
+            </li>
         </ul>
     </nav>
     <button id="js-menu-trigger" class="sliding-menu-button lines-button x2" type="button" role="button" aria-label="Toggle Navigation">
@@ -85,6 +103,7 @@
 
                 <!-- <div class="columns"> -->
                     <div class="pts">
+                        <h3 class="proj"> Projects </h3>
                         <a href="https://ptstestserver.pythonanywhere.com/">
                             <h2>Pediatric Therapy Solutions</h2>
                         </a>
@@ -127,7 +146,7 @@
     </div>
 
 
-
+    <script src="/js/clock.js"></script>
     <script src="/js/nav.js"></script>
 </body>
 </html>

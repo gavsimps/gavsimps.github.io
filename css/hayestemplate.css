@@ -1988,6 +1988,7 @@
     }
     .top-menu ul {
       position:absolute;
+      padding-right: 10em;
       right:0
     }
   }

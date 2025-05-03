@@ -10,8 +10,11 @@ function updateTime() {
     clock.time = zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2);
     clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth() + 1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()];
 
-    document.getElementById('date').textContent = clock.date;
-    document.getElementById('clock').textContent = clock.time;
+    const dateS =  [document.getElementById('date'),  document.getElementById('date2')];
+    const timeS = [document.getElementById('clock'), document.getElementById('clock2')]
+    
+    dateS.forEach(el => { if (el) el.textContent = clock.date; })
+    timeS.forEach(el => { if (el) el.textContent = clock.time; })
 
 }
 

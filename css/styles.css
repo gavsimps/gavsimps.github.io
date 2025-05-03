@@ -109,3 +109,46 @@ html {
     color: rgb(39, 140, 255);
   }
 }
+
+
+.proj {
+  margin-top: 3em;
+}
+
+#masthead {
+  background-color: #313130;
+  
+  .site-title {
+    color: white;
+  }
+}
+
+.top-menu li a {
+  color: white;
+}
+
+.sliding-nav-top {
+  display: flex;
+  flex-direction: row;
+
+  .datetime {
+    font-size: 1.75rem;
+  }
+}
+
+.short {
+  margin-left: 170px;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.datetime {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-end;
+  font-family: 'Share Tech Mono', monospace;
+  color: #ffffff;
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+}

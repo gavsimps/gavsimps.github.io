@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Gavin Simpson is a Graduate from Indiana University (IU) Bloomington with a degree in Informatics and Cybersecurity.">
+    <title>Gavin Simpson</title>
+
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- hayesall template -->
+    <link rel="stylesheet" type="text/css" href="css/hayestemplate.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body>
+    <header id="masthead">
+        <div class="inner-wrap">
+            <a class="site-title" href="https://gavsimps.github.io/#">gavsimps</a>
+            <nav class="menu top-menu" role="navigation">
+                <ul class="menu-item">
+                    <li>
+                        <a href="https://gavsimps.github.io/projects.html">Projects</a>
+                    </li>
+                    <!-- <li>
+                        <a href="https://gavsimps.github.io/photos">Photography</a>
+                    </li> -->
+                    <li>
+                        <a href="https://gavsimps.github.io/cv.html">CV</a>
+                    </li>
+                </ul>
+                <div class="datetime">
+                    <span id="date"></span>
+                    <span id="clock"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav id="js-menu" class="sliding-menu-content" role="navigation">
+        <div class="sliding-nav-top">
+            <h5>
+                gavsimps
+                <span>Directory</span>
+            </h5>
+            <div class="datetime">
+                <span id="date2"></span>
+                <span id="clock2"></span>
+            </div>
+        </div> 
+        <ul class="menu-item">
+            <li>
+                <a href="https://gavsimps.github.io/projects.html">
+                    <div class="title">Projects</div>
+                    <p class="short">Collection of Personal Work</p>
+            </li>
+            <li>
+                <a href="https://gavsimps.github.io/cv.html">
+                    <div class="title">CV</div>
+                    <p class="short">Education and Experience</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <button id="js-menu-trigger" class="sliding-menu-button lines-button x2" type="button" role="button" aria-label="Toggle Navigation">
+        <span class="nav-lines"></span>
+    </button>
+    <div id="js-menu-screen" class="menu-screen"></div>
+
+    <div class="page-wrapper">
+        <div class="content">
+        </div>
+    </div>
+
+
+    <script src="/js/clock.js"></script>
+    <script src="/js/nav.js"></script>
+</body>
+</html>
