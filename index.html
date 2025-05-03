@@ -4,23 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Gavin Simpson is a Graduate from Indiana University (IU) Bloomington with a degree in Informatics and Cybersecurity.">
     <title>Gavin Simpson</title>
 
     <!-- resets browser defaults -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <!-- custom styles -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- hayesall template -->
+     <link rel="stylesheet" type="text/css" href="css/hayestemplate.css">
 
+    <!-- fonts -->
+    
 
 </head>
 <body>
-    <nav class="menu">
+    <header id="masthead">
+        <div class="inner-wrap">
+            <a class="site-title" href="https://gavsimps.github.io/#">gavsimps.com</a>
+            <nav class="menu top-menu" role="navigation">
+                <ul class="menu-item">
+                    <li>
+                        <a href="https://gavsimps.github.io/projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="https://gavsimps.github.io/photos">Photography</a>
+                    </li>
+                    <li>
+                        <a href="https://gavsimps.github.io/cv">CV</a>
+                    </li>
+            </nav>
+        </div>
+    </header>
+
+    <nav id="js-menu" class="sliding-menu-content" role="navigation">
+        <h5>
+            gavsimps.com
+            <span>Table of Contents</span>
+        </h5>
         <ul class="menu-item">
-            <li>Projects</li>
-            <li>Photography</li>
-            <li>CV</li>
+            
         </ul>
     </nav>
-    <p>Hello Freaker</p>
+    <button id="js-menu-trigger" class="sliding-menu-button lines-button x2" type="button" role="button" aria-label="Toggle Navigation">
+        <span class="nav-lines"></span>
+    </button>
+    <div id="js-menu-screen" class="menu-screen"></div>
+
+    <div class="page-wrapper">
+        <div class="main-page">
+           <div class="content">
+                <div class="intro">
+                    <img src="/images/me2.jpg" height="450" width="450" 
+                    style="display: block; margin: auto; padding-top: 1em; padding-bottom: 1em; border-radius: 50%;">
+                </div>
+                <div class="social-links">
+                    <center>
+                        <h1>Gavin Simpson • BS of Informatics</h1>
+                        <a class="btn-social" href="https://github.com/gavsimps/">
+                            <img class="github" src="images/icons/github-mark.svg" width="25px">
+                            <span>GitHub</span>
+                        </a>
+                        <a class="btn-social" href="https://www.linkedin.com/in/gavin-simpson-476432264/">
+                            <img src="images/icons/LinkedIn_icon.svg.png" width="25px">
+                            <span>LinkedIn</span>
+                        </a>
+                    </center>
+                </div>
+                <div class="blurb">
+                    <p>Gavin Simpson is an Indiana University graduate
+                         with a Bachelors of Science in Informatics with a cognate in cybersecurity. 
+                         His interests are in web devlopment, server management, operating systems, software engineering,
+                         open source software; and their applications in solving real world issues. Additionally,
+                         he is interested in photography, travelling, and cooking as hobbies.
+                    </p>
+                    <p><span style="font-weight: bold;">Contact</span>:
+                        gsimpson0314@gmail.com
+                    </p> 
+                </div>
+
+                <!-- <div class="columns"> -->
+                    <div class="pts">
+                        <a href="https://ptstestserver.pythonanywhere.com/">
+                            <h2>Pediatric Therapy Solutions</h2>
+                        </a>
+                        <iframe src="https://ptstestserver.pythonanywhere.com/" 
+                        title="Pediatric Therapy Solutions" width="100%" height="600"></iframe>
+
+                        <p>Pediatric Therapy Solutions (PTS) is a joint company between <span>Tiny Tots Speech Therapy</span>
+                            and <span>PT for Kids, Inc.</span> to encompass physical, speech, and occupational therapy in 
+                            a single setting. They had reached out to a small group of us graduates from IU to recreate their website from scratch.
+                        </p> 
+
+                        <p>We used the Flask framework to build the base of this web project. It was written using Python, HTML,
+                            CSS, Javascript, and SQL. The site allows for employee specific logins, resume management, 
+                            client screenings, and automated emailing.
+                        </p>
+                    <!-- </div> -->
+                </div>
+           </div>
+            <!-- content -->
+        </div>
+
+        <footer id="site-footer">
+            <nav class="menu bottom-menu" role="navigation">
+                <ul class="menu-item">
+                    <li>
+                        <a href="https://gavsimps.github.io/#">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://gavsimps.github.io/projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="https://gavsimps.github.io/photos">Photography</a>
+                    </li>
+                    <li>
+                        <a href="https://gavsimps.github.io/cv">CV</a>
+                    </li>
+            </nav>
+        </footer>
+        <!-- wrapper -->
+    </div>
+
+
+
+    <script src="/js/nav.js"></script>
 </body>
 </html>

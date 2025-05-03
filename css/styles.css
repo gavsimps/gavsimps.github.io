@@ -28,163 +28,84 @@ html {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
   UTILITIES
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-/* no break - example; optional to keep */
 .nobr {
   white-space: nowrap;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-  START YOUR STYLES HERE
+  STYLES
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-
-/* ***************************************
-*              MOBILE NAV                *
-******************************************/
-#mobile {
-  display: none;
+.main-page {
+  display: block;
+  margin: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
-@media (max-width: 800px) {
-  #myLinks {
-    display: none;
-  }
-
-  nav .logonav {
-    display: none;
-  }
-
-  #mobile {
-    display: block;
-  }
-
-  .hover {
-    font-size: 2.0em;
-  }
-
-  .hover:hover {
-    color: #3f83ea;
-  }
-
-  .sidenav {
-    display: none;
-    height: 100%;
-    width: 0;
-    /* z-index: 1; */
-    /* top: 0;
-    left: 0; */
-    background-color: #1d2142;
-    /* overflow-x: hidden; */
-    padding-top: 60px;
-    transition: 0.5s;
-  }
-
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .sidenav a:hover {
-    color: #3f83ea;
-  }
-
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
+.content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.logo-t {
-  font-size: 24px;
+.page-wrapper {
+  padding: 0 2em;
 }
 
-nav a {
-  color: white;
+.social-links {
   text-decoration: none;
-  padding: 0 0.2rem 0;
+
 }
 
-nav a:hover {
-  color: #3f83ea;
-}
+.btn-social {
+  color: #313130 !important;
+  border: 1px solid #ddd !important;
+  border-radius: 30px;
+  font-size: 2em;
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: .875rem;
+  margin-bottom: 1.5rem;
 
-nav a:hover svg {
-  fill: #3f83ea;
-}
-
-nav a .active {
-  color: #3f83ea;
-}
-
-.github {
-  display: flex;
-  justify-content: center;
-}
-
-.github svg {
-  padding-left: 5px;
-}
-
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-  MEDIA QUERIES
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-/* MEDIA QUERY FOR PREFERS-COLOR-SCHEME */
-/* @media (prefers-color-scheme: dark) {
-  body.adaptive {
-
+  span {
+    font-family: "Helvetica Neue","Segoe UI",Arial,sans-serif;
+    font-size: 2em;
   }
-} */
 
+  img {
+    vertical-align: baseline;
+  }
+}
 
-/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
-/* Extra small devices (portrait phones, less than 576px)
-No media query for `xs` since this is the default */
+.btn-social:hover .github {
+  content: url("../images/icons/github-mark-white.svg");
+}
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+.capstone {
+  /* width: 50%; */
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+  h2 {
+    text-align: center;
+  }
 
+  a:hover {
+    color: rgb(39, 140, 255);
+  }
+}
 
+.pts {
+  /* width: 50%; */
 
+  h2 {
+    text-align: center;
+  }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
-
-
-/* MEDIA QUERIES FROM LARGEST TO SMALLEST */
-/* Extra small devices (portrait phones, less than 576px) */
-/* @media (max-width: 575.98px) {
-
-} */
-
-/* Small devices (landscape phones, less than 768px) */
-/* @media (max-width: 767.98px) {
-
-} */
-
-/* Medium devices (tablets, less than 992px) */
-/* @media (max-width: 991.98px) {
-
-} */
-
-/* Large devices (desktops, less than 1200px) */
-/* @media (max-width: 1199.98px) {
-
-} */
-
-/* Extra large devices (large desktops)
-No media query since the extra-large breakpoint has no upper bound on its width */
+  a:hover {
+    color: rgb(39, 140, 255);
+  }
+}
