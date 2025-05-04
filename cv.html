@@ -17,29 +17,50 @@
 <body>
     <header id="masthead">
         <div class="inner-wrap">
-            <a class="site-title" href="https://gavsimps.github.io/#">gavsimps.github.io</a>
+            <a class="site-title" href="https://gavsimps.github.io/#">gavsimps</a>
             <nav class="menu top-menu" role="navigation">
                 <ul class="menu-item">
-                    <!-- <li>
-                        <a href="https://gavsimps.github.io/projects">Projects</a>
-                    </li>
                     <li>
+                        <a href="https://gavsimps.github.io/projects.html">Projects</a>
+                    </li>
+                    <!-- <li>
                         <a href="https://gavsimps.github.io/photos">Photography</a>
                     </li> -->
                     <li>
                         <a href="https://gavsimps.github.io/cv.html">CV</a>
                     </li>
+                </ul>
+                <div class="datetime">
+                    <span id="date"></span>
+                    <span id="clock"></span>
+                </div>
             </nav>
         </div>
     </header>
 
     <nav id="js-menu" class="sliding-menu-content" role="navigation">
-        <h5>
-            gavsimps.com
-            <span>Table of Contents</span>
-        </h5>
+        <div class="sliding-nav-top">
+            <h5>
+                gavsimps
+                <span>Directory</span>
+            </h5>
+            <div class="datetime">
+                <span id="date2"></span>
+                <span id="clock2"></span>
+            </div>
+        </div> 
         <ul class="menu-item">
-            
+            <li>
+                <a href="https://gavsimps.github.io/projects.html">
+                    <div class="title">Projects</div>
+                    <p class="short">Collection of Personal Work</p>
+            </li>
+            <li>
+                <a href="https://gavsimps.github.io/cv.html">
+                    <div class="title">CV</div>
+                    <p class="short">Education and Experience</p>
+                </a>
+            </li>
         </ul>
     </nav>
     <button id="js-menu-trigger" class="sliding-menu-button lines-button x2" type="button" role="button" aria-label="Toggle Navigation">
@@ -125,10 +146,10 @@
                     <li>
                         <a href="https://gavsimps.github.io/#">Home</a>
                     </li>
-                    <!-- <li>
-                        <a href="https://gavsimps.github.io/projects">Projects</a>
-                    </li>
                     <li>
+                        <a href="https://gavsimps.github.io/projects.html">Projects</a>
+                    </li>
+                    <!-- <li>
                         <a href="https://gavsimps.github.io/photos">Photography</a>
                     </li> -->
                     <li>
@@ -137,6 +158,9 @@
             </nav>
         </footer>
     </div>
+
+    <script src="/js/clock.js"></script>
+    <script src="/js/nav.js"></script>
     
 </body>
 </html>
