@@ -574,7 +574,7 @@
   }
   nav ul {
     margin:0;
-    padding:0
+    /* padding:0; */
   }
   nav li {
     list-style:none
@@ -1978,8 +1978,8 @@
   }
   @media screen and (min-width: 80em) {
     .top-menu {
-      float:left;
-      display:block;
+      float:right;
+      /* display:block; */
       margin-right:2.3576515979%;
       width:57.3509785009%
     }
@@ -1987,7 +1987,7 @@
       margin-right:0
     }
     .top-menu ul {
-      position:absolute;
+      /* position:absolute; */
       padding-right: 10em;
       right:0
     }

@@ -152,3 +152,18 @@ html {
   color: #daf6ff;
   text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
 }
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.child {
+  width: 100%;
+}
+
+.top-menu {
+  
+}
