@@ -17,5 +17,5 @@ document.addEventListener("DOMContentLoaded", function () {
         if (trigger) trigger.addEventListener(eventType, toggleMenu, { passive: false });
         if (screen) screen.addEventListener(eventType, toggleMenu, { passive: false });
     });
-    });
+});
       

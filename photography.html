@@ -75,31 +75,38 @@
     </button>
     <div id="js-menu-screen" class="menu-screen"></div>
 
-    <!-- main body -->
-    <!-- set up cards -->
+
      <div class="page-wrapper">
         <div class="main-page">
-           <div class="content">
-
-                <div class="card">
-                    <div id="carousel" class="carousel" role="region" aria-labelledby="carousel-1">
-                        <div class="slide" role="tabpanel">
-                            <div class="slide-content">
-                                <img src="..." alt="..."/>
-                            </div>
-                        </div>
+           <div class="content2">
+                <div class="card" id="jppop" type="button" role="button" onclick="pop()">
+                    <div id="carouselContainer" class="carouselContainer" role="region" aria-labelledby="carousel-1">
+                        <img class="cI" id="carouselImg" src='photos/japan2025/IMG_3670.jpg'>
                     </div>
-                    <div class="container">
+                    <div class="cardBlurb">
                         <h4><b>Japan 2025</b></h4>
                     </div>
                 </div>
-    <!-- javascrip tfor popup scrollable window -->
-    <!-- javascript loop through photos in folder, or use php -->
+           </div>
 
+           <div id="popout" class="is-visible popoutv">
+                <div id="jp" class="list"></div>
+                
+                <div onclick="pop2()" id="closeJp" class="closeButton" role="button">
+                    <div class="iconContainer">
+                        <div class="ex"></div>
+                    </div>
+                </div>
+                
+                <div onclick="toTop()" id="top" class="scrollButton is-visible" role="button">
+                    <div class="arrowContainer">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
            </div>
         </div>
      </div>
-    <!-- end main -->
+
 
     <footer id="site-footer">
             <nav class="menu bottom-menu" role="navigation">
@@ -124,6 +131,7 @@
 
     <script src="/js/clock.js"></script>
     <script src="/js/nav.js"></script>
-    <script src="/js/carousel.js"></script>
+    <script src="/js/photocarousel.js"></script>
+    <script src="/js/popout.js"></script>
 </body>
 </html>
