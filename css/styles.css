@@ -168,7 +168,7 @@ html {
 .parent {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -176,8 +176,8 @@ html {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border: solid 2px;
-  margin: 2rem 2rem;
-  width: 30rem;
+  margin: 2rem 1rem;
+  width: 40rem;
 
   h2 {
     text-align: center;
@@ -185,6 +185,21 @@ html {
 
   p {
     padding: 0 10px;
+  }
+
+  iframe {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 78em) {
+  .cardP {
+    width: 100%;
+    margin: 2rem 0 0 0;
+
+    iframe {
+      height: 500px;
+    }
   }
 }
 
