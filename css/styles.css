@@ -172,10 +172,6 @@ html {
   flex-wrap: wrap;
 }
 
-.child {
-  /* width: 50rem; */
-}
-
 .cardP {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -240,20 +236,20 @@ PHOTOGRAPHY PAGE
   top: 0;
   left: 0;
   /* height: 1000vmax; */
-  margin-top: 9em;
+  /* margin-top: 9em; */
   background-color: #313130;
   z-index: 99;
 }
 
-@media screen and (max-width: 56em) {
+@media screen and (max-width: 78em) {
   .popoutv {
-    margin-top: 7em;
+    margin-top: 0;
   }
 }
 
 @media screen and (min-width: 80em) {
   .popoutv {
-    margin-top: 7.5em;
+    /* margin-top: 7.5em; */
   }
 }
 
@@ -286,6 +282,14 @@ PHOTOGRAPHY PAGE
   border-radius: 50%;
 }
 
+/* @media screen and (max-width: 78em) {
+  .scrollButton {
+    position: fixed;
+    top: 25px;
+    left: 20px;
+  }
+} */
+
 .scrollButton:hover {
   cursor: pointer;
 }
@@ -308,12 +312,22 @@ PHOTOGRAPHY PAGE
 
 .closeButton {
   position: fixed;
-  top: 135px;
-  right: 60px;
+  /* top: 135px;
+  right: 60px; */
+  top: 25px;
+  left: 20px;
   background-color: #b1cbd3;
   height: 2.5em;
   width: 2.5em;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 78em) {
+  .closeButton {
+    position: fixed;
+    top: 25px;
+    left: 20px;
+  }
 }
 
 .closeButton:hover {
