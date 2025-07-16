@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Gavin Simpson is a Graduate from Indiana University (IU) Bloomington with a degree in Informatics and Cybersecurity.">
+    <meta name="description"
+        content="Gavin Simpson is a Graduate from Indiana University (IU) Bloomington with a degree in Informatics and Cybersecurity.">
     <title>Gavin Simpson</title>
 
     <!-- resets browser defaults -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <!-- custom styles -->
-     <link rel="stylesheet" type="text/css" href="css/extra.css">
+    <link rel="stylesheet" type="text/css" href="css/extra.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 </head>
+
 <body>
     <header id="masthead">
         <div class="inner-wrap">
@@ -48,7 +51,7 @@
                 <span id="date2"></span>
                 <span id="clock2"></span>
             </div>
-        </div> 
+        </div>
         <ul class="menu-item">
             <li>
                 <a href="https://gavsimps.github.io/#">
@@ -68,94 +71,93 @@
                 </a>
             </li>
             <li>
-                 <a href="https://gavsimps.github.io/photography.html">
+                <a href="https://gavsimps.github.io/photography.html">
                     <div class="title">Photography</div>
                     <p class="short">Photo Portfolio</p>
-                 </a>
+                </a>
             </li>
         </ul>
     </nav>
-    <button id="js-menu-trigger" class="sliding-menu-button lines-button x2" type="button" role="button" aria-label="Toggle Navigation">
+    <button id="js-menu-trigger" class="sliding-menu-button lines-button x2" type="button" role="button"
+        aria-label="Toggle Navigation">
         <span class="nav-lines"></span>
     </button>
     <div id="js-menu-screen" class="menu-screen"></div>
 
-    <div class="page-wrapper">
-        <div class="parent">
-            <div class="child">
-                <div class="cardP">
-                    <a href="https://ptstestserver.pythonanywhere.com/">
-                        <h2>Pediatric Therapy Solutions</h2>
-                    </a>
-                    <iframe src="https://ptstestserver.pythonanywhere.com/" 
-                    title="Pediatric Therapy Solutions" width="100%" ></iframe>
-
-                    <p>Pediatric Therapy Solutions (PTS) is a joint company between <span>Tiny Tots Speech Therapy</span>
-                        and <span>PT for Kids, Inc.</span> to encompass physical, speech, and occupational therapy in 
-                        a single setting. They had reached out to a small group of us graduates from IU to recreate their website from scratch.
-                    </p> 
-
-                    <p>We used the Flask framework to build the base of this web project. It was written using Python, HTML,
-                        CSS, Javascript, and SQL. The site allows for employee specific logins, resume management, 
-                        client screenings, and automated emailing. This site is still under development, but currently fulfills
-                        all needed functions.
-                    </p>
-                </div>
-            </div>
-            <div class="child">
-                <div class="cardP">
-                    <a href="https://cgi.luddy.indiana.edu/~gavsimps/Simpson-Gavin-Web-Design-Final/">
-                        <h2>Web Design Final Project</h2>
-                    </a>
-                    <iframe src="https://cgi.luddy.indiana.edu/~gavsimps/Simpson-Gavin-Web-Design-Final/" 
-                    title="Web Design Final Project" width="100%" ></iframe>
-
-                    <p>This website is the culmination of the skills I learned throughout my Web Develpoment course at IU. I had a llot of fun making this
-                        project as there were no constraints on what you could make.
-                    </p>
-                    <p>
-                        Some functionality of the website has broken because it is hosted on IU servers.
-                        I have also incorporated Javascript into this site as well to make a functioning clock, a bouncing DVD logo, and an
-                        animated flashbang. (Be careful pressing the blue button).
-                    </p>
-                </div>
-            </div>
-            <div class="child">
-                <div class="cardP">
-                    <h2>Ubuntu Server</h2>
-                    <img src="images/ubuntu.png">
-                    <p>I have successfully deployed and configured an external Ubuntu server as a personal project to deepen my understanding
-                        of Linux systems and server administration. I have installed and managed core servicecs such as OpenSSH, Apache/Nginx,
-                        and UFW for firewall management.
-                    </p> 
-                    <p>Additionally, using systemd for service management and shell scripts to automate routine tasks, this 
-                        project helped in my understanding of server managment and network security.
-                    </p>
-                </div>
-            </div>
+    <div class="projholder">
+        <div class="projrow">
+            <iframe src="https://ptstestserver.pythonanywhere.com/" title="Pediatric Therapy Solutions"></iframe>
+            <p class="pright">Pediatric Therapy Solutions (PTS) is a joint company between <b>Tiny Tots Speech
+                    Therapy</b>
+                and <b>PT for Kids, Inc.</b> to encompass physical, speech, and occupational therapy in
+                a single setting. They had reached out to me and a small group of graduates from IU to recreate their
+                website from scratch.
+                <br><br>
+                We used the Flask framework to build the base of this web project. It was written using Python, HTML,
+                CSS, and Javascript with a connected SQL database. The site allows for employee specific logins, resume
+                management,
+                client screenings, and automated emailing. This site is still under development, but currently fulfills
+                all needed functions.
+            </p>
         </div>
 
+        <div class="projrow">
+            <p class="pleft">This website was created to demonstrate the culmination of my skills in web development at
+                IU. I had a lot of fun
+                creating this project as there were no constraints as to what one could make. I created mostly
+                infomational
+                pages documenting thnigs I enjoy or believe otherr people should know.
+                <br><br>
+                Some functionality of the site is deprecated as it is using links no longer available as it is hosted
+                on IU servers. This website utilizes HTML, CSS, and Javascript to function. <b>WARNING</b>: On the main
+                page there
+                is a light blue button that plays a <b>VERY</b> loud sound and displays a flash effect when clicked.
+            </p>
+            <iframe src="https://cgi.luddy.indiana.edu/~gavsimps/Simpson-Gavin-Web-Design-Final/"
+                title="Web Design Final Project"></iframe>
+        </div>
 
-        <footer id="site-footer">
-            <nav class="menu bottom-menu" role="navigation">
-                <ul class="menu-item">
-                    <li>
-                        <a href="https://gavsimps.github.io/#">Home</a>
-                    </li>
-                    <li>
-                        <a href="https://gavsimps.github.io/projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="https://gavsimps.github.io/photography.html">Photography</a>
-                    </li>
-                    <li>
-                        <a href="https://gavsimps.github.io/cv.html">CV</a>
-                    </li>
-            </nav>
-        </footer>
+        <div class="projrow">
+            <img src="images/ubuntu.png">
+            <p class="pright">I have successfully deployed and configured an external Ubuntu server as a personal
+                project to deepen my understanding
+                of Linux systems and server administration. I have installed and managed core services such as OpenSSH,
+                Apache/Nginx,
+                and UFW for firewall management.
+                <br><br>
+                Additionally, using systemd for service management and shell scripts to automate routine tasks, this
+                project helped in my understanding of server managment and network security.
+                <br><br>
+                I mainly host game servers such as <i>Minecraft, Titanfall 2, Satisfactory,</i> and <i>Terraria</i>. I
+                have also been
+                working on setting up a local cloud storage on the server.
+
+            </p>
+        </div>
     </div>
+
+
+    <footer id="site-footer">
+        <nav class="menu bottom-menu" role="navigation">
+            <ul class="menu-item">
+                <li>
+                    <a href="https://gavsimps.github.io/#">Home</a>
+                </li>
+                <li>
+                    <a href="https://gavsimps.github.io/projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="https://gavsimps.github.io/photography.html">Photography</a>
+                </li>
+                <li>
+                    <a href="https://gavsimps.github.io/cv.html">CV</a>
+                </li>
+        </nav>
+    </footer>
+
 
     <script src="/js/clock.js"></script>
     <script src="/js/nav.js"></script>
 </body>
+
 </html>
