@@ -229,6 +229,21 @@ PROJECT LISTINGS
 /* --------------------------------
 PHOTOGRAPHY PAGE
 ------------------------------------- */
+.main-page-p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+@media screen and (max-width: 78em) {
+  .main-page-p {
+    flex-direction: column;
+    padding-bottom: 5px;
+  }
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -255,6 +270,7 @@ PHOTOGRAPHY PAGE
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 1em;
 }
 
 .cI {
