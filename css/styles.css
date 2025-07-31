@@ -240,7 +240,6 @@ PHOTOGRAPHY PAGE
 @media screen and (max-width: 78em) {
   .main-page-p {
     flex-direction: column;
-    padding-bottom: 5px;
   }
 }
 
