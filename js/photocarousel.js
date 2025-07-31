@@ -67,9 +67,22 @@ function shuffle(array) {
 // --------------------------------
 counter = 0
 shuffle(arrayID[0]);
-const setImage = () => {
+const setImageJ = () => {
     document.getElementById("carouselImg").src = arrayID[0][counter];
     counter = (counter+1) % arrayID[0].length;
 }
 
-setInterval(setImage, 5000)
+setInterval(setImageJ, 5000)
+
+// ----------------------
+//         Europe Card
+// ----------------------
+counter = 0
+shuffle(arrayID[1]);
+const setImageE = () => {
+    document.getElementById("carouselImgE").src = arrayID[1][counter];
+    counter = (counter+1) % arrayID[1].length;
+}
+
+// setInterval(setImageE, 5000)
+
