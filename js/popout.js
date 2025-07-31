@@ -33,9 +33,7 @@ const arrayID = [
     'photos/europe2024/IMG_3650.jpg',]
 ]
 
-document.addEventListener("DOMContentLoaded", () => {
-    console.log('script loaded');
-
+function load() {
     const cards = document.querySelectorAll('.card');
     console.log(cards.length)
 
@@ -46,8 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
             pop(index)
         })
     });
-});
+}
 
+function lol() {
+    console.log('stardate: kill yourself')
+}
 
 const popout = document.getElementById('popout');
 const divQual = document.getElementById('temp');
