@@ -1,7 +1,3 @@
-function lol() {
-    console.log('stardate: kill yourself')
-}
-
 const arrayID = [
     ['photos/japan2025/IMG_3670.jpg',
     'photos/japan2025/IMG_3672.jpg','photos/japan2025/IMG_3674.jpg', 'photos/japan2025/IMG_3675.jpg','photos/japan2025/IMG_3678.jpg',
@@ -37,26 +33,22 @@ const arrayID = [
     'photos/europe2024/IMG_3650.jpg',]
 ]
 
-function load() {
+window.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll('.card');
-    console.log(cards.length)
 
     cards.forEach(card => {
         card.addEventListener('click', function () {
-            console.log("function recognized")
             const index = parseInt(card.dataset.index);
             pop(index)
         })
     });
-}
+});
 
 const popout = document.getElementById('popout');
 const divQual = document.getElementById('temp');
 const scrollT = document.getElementById('top');
 
 function pop(index) {
-    console.log(index)
-
     divQual.innerHTML = '';
 
     for (let i = 0; i < arrayID[index].length; i++) {

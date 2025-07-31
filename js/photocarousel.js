@@ -16,7 +16,7 @@ const jpCarousel = ['photos/japan2025/IMG_3670.jpg',
     'photos/japan2025/IMG_4004.jpg','photos/japan2025/IMG_4006.jpg','photos/japan2025/IMG_4009.jpg','photos/japan2025/IMG_4010.jpg','photos/japan2025/IMG_4014.jpg','photos/japan2025/IMG_4015.jpg','photos/japan2025/IMG_4017.jpg','photos/japan2025/IMG_4019.jpg','photos/japan2025/IMG_4021.jpg','photos/japan2025/IMG_4022.jpg','photos/japan2025/IMG_4025.jpg','photos/japan2025/IMG_4026.jpg','photos/japan2025/IMG_4029.jpg','photos/japan2025/IMG_4032.jpg','photos/japan2025/IMG_4033.jpg','photos/japan2025/IMG_4035.jpg','photos/japan2025/IMG_4036.jpg','photos/japan2025/IMG_4039.jpg','photos/japan2025/IMG_4047.jpg','photos/japan2025/IMG_4049.jpg','photos/japan2025/IMG_4050.jpg','photos/japan2025/IMG_4052.jpg','photos/japan2025/IMG_4054.jpg','photos/japan2025/IMG_4055.jpg','photos/japan2025/IMG_4056.jpg','photos/japan2025/IMG_4057.jpg','photos/japan2025/IMG_4063.jpg','photos/japan2025/IMG_4064.jpg','photos/japan2025/IMG_4065.jpg','photos/japan2025/IMG_4066.jpg','photos/japan2025/IMG_4073.jpg','photos/japan2025/IMG_4075.jpg','photos/japan2025/IMG_4077.jpg','photos/japan2025/IMG_4080.jpg','photos/japan2025/IMG_4086.jpg','photos/japan2025/IMG_4090.jpg','photos/japan2025/IMG_4094.jpg','photos/japan2025/IMG_4107.jpg','photos/japan2025/IMG_4108.jpg','photos/japan2025/IMG_4118.jpg','photos/japan2025/IMG_4126.jpg','photos/japan2025/IMG_4136.jpg','photos/japan2025/IMG_4137.jpg','photos/japan2025/IMG_4142.jpg','photos/japan2025/IMG_4148.jpg','photos/japan2025/IMG_4156.jpg','photos/japan2025/IMG_4164.jpg','photos/japan2025/IMG_4168.jpg','photos/japan2025/IMG_4170.jpg','photos/japan2025/IMG_4172.jpg','photos/japan2025/IMG_4177.jpg','photos/japan2025/IMG_4180.jpg','photos/japan2025/IMG_4181.jpg','photos/japan2025/IMG_4203.jpg','photos/japan2025/IMG_4209.jpg','photos/japan2025/IMG_4214.jpg','photos/japan2025/IMG_4215.jpg','photos/japan2025/IMG_4217.jpg','photos/japan2025/IMG_4231.jpg','photos/japan2025/IMG_4235.jpg','photos/japan2025/IMG_4239.jpg','photos/japan2025/IMG_4242.jpg','photos/japan2025/IMG_4248.jpg','photos/japan2025/IMG_4250.jpg','photos/japan2025/IMG_4252.jpg','photos/japan2025/IMG_4258.jpg','photos/japan2025/IMG_4262.jpg','photos/japan2025/IMG_4265.jpg','photos/japan2025/IMG_4266.jpg','photos/japan2025/IMG_4268.jpg','photos/japan2025/IMG_4269.jpg','photos/japan2025/IMG_4270.jpg','photos/japan2025/IMG_4274.jpg','photos/japan2025/IMG_4290.jpg','photos/japan2025/IMG_4298.jpg','photos/japan2025/IMG_4305.jpg',
     'photos/japan2025/IMG_4306.jpg'];
 
-const arrayID = [
+const arrayIDC = [
     ['photos/japan2025/IMG_3670.jpg',
     'photos/japan2025/IMG_3672.jpg','photos/japan2025/IMG_3674.jpg', 'photos/japan2025/IMG_3675.jpg','photos/japan2025/IMG_3678.jpg',
     'photos/japan2025/IMG_3680.jpg','photos/japan2025/IMG_3682.jpg', 'photos/japan2025/IMG_3690.jpg','photos/japan2025/IMG_3706.jpg',
@@ -66,10 +66,10 @@ function shuffle(array) {
 //              Japan Card
 // --------------------------------
 counter = 0
-shuffle(arrayID[0]);
+shuffle(arrayIDC[0]);
 const setImageJ = () => {
-    document.getElementById("carouselImg").src = arrayID[0][counter];
-    counter = (counter+1) % arrayID[0].length;
+    document.getElementById("carouselImg").src = arrayIDC[0][counter];
+    counter = (counter+1) % arrayIDC[0].length;
 }
 
 setInterval(setImageJ, 5000)
@@ -78,10 +78,10 @@ setInterval(setImageJ, 5000)
 //         Europe Card
 // ----------------------
 counter = 0
-shuffle(arrayID[1]);
+shuffle(arrayIDC[1]);
 const setImageE = () => {
-    document.getElementById("carouselImgE").src = arrayID[1][counter];
-    counter = (counter+1) % arrayID[1].length;
+    document.getElementById("carouselImgE").src = arrayIDC[1][counter];
+    counter = (counter+1) % arrayIDC[1].length;
 }
 
 setInterval(setImageE, 5000)
