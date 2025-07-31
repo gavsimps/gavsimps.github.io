@@ -84,5 +84,5 @@ const setImageE = () => {
     counter = (counter+1) % arrayID[1].length;
 }
 
-// setInterval(setImageE, 5000)
+setInterval(setImageE, 5000)
 

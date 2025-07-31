@@ -33,25 +33,30 @@ const arrayID = [
     'photos/europe2024/IMG_3650.jpg',]
 ]
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", () => {
+    console.log('script loaded');
+
     const cards = document.querySelectorAll('.card');
+    console.log(cards.length)
 
     cards.forEach(card => {
         card.addEventListener('click', function () {
             console.log("function recognized")
-            const index = parseInt(card.getAttribute('index-pos'));
+            const index = parseInt(card.dataset.index);
             pop(index)
         })
-    })
-})
+    });
+});
+
+
+const popout = document.getElementById('popout');
+const divQual = document.getElementById('temp');
+const scrollT = document.getElementById('top');
 
 function pop(index) {
     console.log(index)
-    const popout = document.getElementById('popout');
-    const divQual = document.getElementById('temp');
-    const scrollT = document.getElementById('top')
 
-    console.log(index)
+    divQual.innerHTML = '';
 
     for (let i = 0; i < arrayID[index].length; i++) {
         const image = arrayID[index][i];
@@ -73,19 +78,7 @@ function toTop() {
 
 const origH = window.innerHeight;
 
-function pop2(index) {
-    const popout = document.getElementById('popout');
-    const divQual = document.getElementById('temp');
-    const scrollT = document.getElementById('top')
-
-    for (let i = 0; i < arrayID[index].length; i++) {
-        const image = arrayID[index][i];
-        const imgEl = document.createElement('img');
-        imgEl.classList.add("popimg");
-        divQual.append(imgEl);
-        imgEl.src = image;
-    }
-
+function pop2() {
     popout.classList.toggle("is-visible");
     scrollT.classList.toggle("is-visible");
 
