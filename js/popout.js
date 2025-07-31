@@ -1,3 +1,7 @@
+function lol() {
+    console.log('stardate: kill yourself')
+}
+
 const arrayID = [
     ['photos/japan2025/IMG_3670.jpg',
     'photos/japan2025/IMG_3672.jpg','photos/japan2025/IMG_3674.jpg', 'photos/japan2025/IMG_3675.jpg','photos/japan2025/IMG_3678.jpg',
@@ -44,10 +48,6 @@ function load() {
             pop(index)
         })
     });
-}
-
-function lol() {
-    console.log('stardate: kill yourself')
 }
 
 const popout = document.getElementById('popout');
